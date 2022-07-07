@@ -1,0 +1,25 @@
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="">
+            <img src="assets/images/logo.jpg" alt="" width="200">
+        </a>
+
+        <!--Boton responsivo cuando se achica la pantalla se transforma el nav bar en un menu desplegable-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/games">Games</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/play">Play</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/aboutus">About US</a></li>
+                <li class="nav-item "><a class="nav-link" routerLink="/login">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

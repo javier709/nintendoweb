@@ -1,0 +1,78 @@
+/*Estilo de las tarjetas*/
+
+.card-border {
+    border: solid10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border :hover {
+    transform: scale(1.05);
+}
+
+
+/*Estilo Games*/
+
+#games {
+    background: rgb(255, 255, 255);
+    /*Degradado del fondo de la imagen desde el blanco al celeste*/
+    background: url(/images/bg-02.png), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+#separator-amiibos {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*Hago un separador como el anterior, otrorgando un ancho del 110% de la pantalla*/
+
+#separator-amiibos .content {
+    background: url(/src/assets/images/bg-03.png);
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+/*Al trabajar con dos imagenes separo con coma cada una de las propiedades para cada imagen de fondo*/
+
+#amiibos {
+    background: url(/images/bg-02.png), url(/images/bg-03.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+}
+
+.amiibo {
+    cursor: pointer;
+    transform: all ease-out 0.2s;
+}
+
+.amiibo:hover {
+    transform: scale(1.05);
+}
+
+.amiibo-name {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/*coloco vw al separador para que sea proporcional al ancho de la pantalla y al redimensionar no se pierde ningun espacio*/
+
+#separator-amiibos-footer {
+    height: 20vw;
+}

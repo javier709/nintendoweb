@@ -1,0 +1,20 @@
+<section>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutGap=".9rem" fxLayoutAlign="center center">
+        <mat-form-field>
+            <input type="email" matInput autocomplete="email" formControlName="email" placeholder="E-Mail" />
+            <mat-hint>Ingrese su correo electrónico</mat-hint>
+            <mat-error *ngIf="!getControl('email').hasError('required')">Ingrese un correo válido</mat-error>
+            <!--agrego directivas estructurales ng-if para mostrar mensajes de alerta-->
+            <mat-error *ngIf="getControl('email').hasError('required')">Campo requerido</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input autocomplete="current-password" type="password" matInput formControlName="password" placeholder="Password" />
+            <mat-error *ngIf="getControl('password').hasError('required')">Campo requerido</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+        Enviar
+      </button>
+    </form>
+</section>

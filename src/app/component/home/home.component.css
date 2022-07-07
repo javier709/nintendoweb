@@ -1,0 +1,52 @@
+#about {
+    padding: 60px 50px;
+}
+
+#play {
+    background: url(/images/bg-04.png);
+    background-color: rgb(243, 98, 13);
+    background-size: 40px 40px;
+}
+
+
+/* Fondo del Ribbon*/
+
+#ribbon {
+    background-color: rgb(219, 26, 26);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+}
+
+#ribbon::after {
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+
+/* con margin top y  z-index subo la imagen y con box shadow agrego el efecto que sube el cuadro rojo contenedor de la imagen*/
+
+#birthday {
+    background-color: rgb(219, 26, 26);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Creo el efecto que la imagen del alcón está sobrepuesto en su contenedor*/
+
+#birthday img {
+    position: relative;
+    margin-top: -30px;
+}
+
+.text-shadow {
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}

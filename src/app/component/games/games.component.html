@@ -1,0 +1,105 @@
+<div id="games">
+    <div class="container-md p-5">
+        <div class="row pt-5">
+            <h3 class="text-center pb-5 pt-5 h1">Featured Animal Crossing Games</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <img class="card-img-top" src="assets/images/card01.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <img class="card-img-top" src="assets/images/card02.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <img class="card-img-top" src="assets/images/card03.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5">
+            <div class="col">
+                <h3 class="text-center" style="color: var(--bs-orange)">More Games on Nintendo.com</h3>
+            </div>
+        </div>
+
+        <!--Justify-content-center alinea al centroel contenido dentro de la columna-->
+
+        <div class="row justify-content-center">
+            <div class="col-2"><a href="#">Nintendo Switch</a></div>
+            <div class="col-2"><a href="#">Nintendo 3DS</a></div>
+            <div class="col-1"><a href="#">Wii U</a></div>
+            <div class="col-1"><a href="#">Mobile</a></div>
+            <div class="col-1"><a href="#">Retro</a></div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--Separador de Amiibbos-->
+
+<div id="separator-amiibos">
+    <div class="content bg-success"></div>
+</div>
+
+<!--Amiibos-->
+<div id="amiibos" class="px-5 pb-5 bg-success">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center text-white text-shadow">Featured Amiibo Figures</h2>
+        </div>
+
+        <!--En row puedo definir todos los breakpoints que quiero que implemente la fil, en este caso defino que la fila tenga dos columnas en el tamaño de pantalla mas chico.. Ademas defino que cuando el breakpoint alcance el md aparezcan 4 columnas-->
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+            <div class="col-sm">
+                <img src="assets/images/figure01.png" alt="" class="w-100 amiibo">
+                <div class="text-center"><span class="amiibo-name h5 p-2"></span>Isabelle</div>
+            </div>
+            <div class="col-sm">
+                <img src="assets/images/figure02.png" alt="" class="w-100 amiibo">
+                <div class=" text-center "><span class="amiibo-name h5 p-2"></span>Tito</div>
+            </div>
+            <div class="col-sm ">
+                <img src="assets/images/figure03.png" alt=" " class="w-100 amiibo">
+                <div class="text-center"><span class="amiibo-name h5 p-2"></span>Poroto</div>
+            </div>
+            <div class="col-sm">
+                <img src="assets/images/figure04.png" alt="" class="w-100 amiibo">
+                <div class=" text-center "><span class="amiibo-name h5 p-2"></span>Carolo</div>
+            </div>
+        </div>
+
+        <!--Creo un boton y con bootstrap le doy sus propiedades-->
+
+        <div class="row py-xl-5">
+            <div class="col text-center">
+                <a href="#" class="link-dark">
+                    <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">Ver Catálogo Amiibo</button>
+                </a>
+            </div>
+        </div>
+
+        <!--Creo otra capa para separar la segunda imagen y ponerla al final del boton y los muñecos-->
+        <div id="separator-amiibos-footer"></div>
+    </div>
+</div>
